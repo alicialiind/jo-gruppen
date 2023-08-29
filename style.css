@@ -9,6 +9,7 @@
 body {
     font-family: 'Nunito', sans-serif;
     color: #222222;
+    position: relative;
 }
 
 header {
@@ -153,7 +154,7 @@ nav ul li a {
 
 .support-section ul li {
     font-weight: 200;
-    list-style-image: url(img/checkmark.svg);
+    list-style-image: url(img/checkmark_white.svg);
     width: 350px;
     margin-bottom: 10px;
 }
@@ -211,14 +212,19 @@ footer {
     align-items: center;
     width: 90%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    padding-bottom: 95px;
+}
+
+.information p {
+    font-size: 14px;
 }
 
 .footer-list ul {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 100px;
-    column-gap: 20px;
+    height: 150px;
+    column-gap: 30px;
 }
 
 .footer-list ul li {
@@ -226,6 +232,7 @@ footer {
     text-transform: uppercase;
     width: 160px;
     margin-bottom: 15px;
+    font-size: 14px;
 }
 
 .footer-list ul li a {
@@ -235,5 +242,110 @@ footer {
 
 .copyright {
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
+    right: 100px;
+}
+
+
+/* OM OSS */
+
+.together-section {
+    border-bottom: 1px solid rgba(34, 34, 34, 0.25);
+    height: 65vh;
+    margin: 0 5%;
+}
+
+.together-article {
+    justify-content: center;
+    margin-bottom: 3%;
+    width: 40%;
+}
+
+.about-page {
+    height: 650px;
+}
+
+.about-page article p {
+    text-align: start;
+}
+
+.about-page article {
+    width: 560px;
+}
+
+
+/* BLI KUND */
+
+.hero-sign-up {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    margin-left: 200px;
+}
+
+.hero-sign-up h1 {
+    margin-bottom: 30px;
+}
+
+.why-us-section {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    column-gap: 175px;
+    margin-bottom: 150px;
+}
+
+.why-us-section article {
+    width: 450px;
+}
+
+.why-us-list {
+    font-weight: 200;
+    width: 400px;
+}
+
+.why-us-list li {
+    list-style-image: url(img/checkmark_green.svg);
+    margin-top: 7px;
+}
+
+
+/* VÅRT STÖD */
+
+.our-support-section {
+    margin: 125px 250px 300px 250px;
+}
+
+.our-support-article p {
+    width: 650px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.our-support-section .alternative-button {
+    color: #507F70;
+    width: 40%;
+}
+
+
+/* HÄR FINNS VI */
+
+.our-locations {
+    margin: 100px 200px;
+}
+
+.our-locations h1 {
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+
+.locations {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.locations article {
+    width: 200px;
 }
