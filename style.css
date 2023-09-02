@@ -19,7 +19,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 h1 {
@@ -55,6 +55,8 @@ button {
     font-size: 1rem;
     padding: 20px 30px;
     border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.3s;
 }
 
 button:hover {
@@ -67,7 +69,16 @@ button:active {
 }
 
 .logo {
-    width: 150px;
+    width: 130px;
+}
+
+.current-page-link {
+    font-weight: bold;
+    border-bottom: #222222 1px solid;
+}
+
+.vartstod-link {
+    padding-bottom: 0px;
 }
 
 nav ul {
@@ -77,14 +88,37 @@ nav ul {
 
 nav ul li {
     text-transform: uppercase;
-    width: 164px;
+    max-width: 168px;
+    margin: 0 30px;
     text-align: center;
     font-size: 14px;
+    height: 100%;
+    padding-bottom: 5px;
+    display: inline-block;
+    position: relative;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #222222;
+}
+
+nav ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #222222;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav ul li:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .hero-section {
@@ -166,6 +200,27 @@ nav ul li a {
     justify-items: center;
     align-items: center;
     text-align: center;
+    transition: 0.3s;
+}
+
+.alternative-button:hover {
+    opacity: 70%;
+}
+
+.alternative-button:active {
+    opacity: 90%;
+}
+
+.alternative-button a {
+    text-decoration: none;
+}
+
+.white {
+    color: white;
+}
+
+.green {
+    color: #507F70;
 }
 
 .about-section {
@@ -212,11 +267,16 @@ footer {
     align-items: center;
     width: 90%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-    padding-bottom: 95px;
+    padding-bottom: 75px;
+}
+
+.information a {
+    color: white;
 }
 
 .information p {
     font-size: 14px;
+    margin-bottom: 20px;
 }
 
 .footer-list ul {
@@ -347,7 +407,15 @@ footer {
 }
 
 .locations article {
-    width: 200px;
+    width: 270px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.locations a {
+    color: #222222;
 }
 
 
@@ -447,13 +515,12 @@ footer {
 }
 
 .information-section {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 230px;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    height: 200px;
     width: 70%;
     column-gap: 50px;
-    row-gap: 50px;
+    row-gap: 30px;
     margin-left: 80px;
     margin-top: 50px;
 }
