@@ -146,12 +146,13 @@ nav ul li:hover::after {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: auto;
     column-gap: 5%;
+    margin: 100px 10%;
 }
 
 .hero-article {
-    width: 45%;
+    width: 50%;
     height: 80%;
     display: flex;
     flex-direction: column;
@@ -159,7 +160,7 @@ nav ul li:hover::after {
 }
 
 .hero-article h1 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .hero-article p {
@@ -169,6 +170,7 @@ nav ul li:hover::after {
 .hero-article button {
     width: 200px;
     margin-left: 200px;
+    margin-top: 50px;
 }
 
 .hero-section img {
@@ -180,7 +182,7 @@ nav ul li:hover::after {
 .support-section {
     background-color: #507F70;
     color: white;
-    height: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -190,6 +192,7 @@ nav ul li:hover::after {
 
 .support-section h2 {
     color: white;
+    margin-bottom: 50px;
 }
 
 .support-section ul {
@@ -351,8 +354,9 @@ footer {
 
 .together-section {
     border-bottom: 1px solid rgba(34, 34, 34, 0.25);
-    height: 65vh;
-    margin: 0 5%;
+    height: auto;
+    margin: 120px 5% 0 5%;
+    padding-bottom: 120px;
 }
 
 .together-article {
