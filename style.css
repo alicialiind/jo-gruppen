@@ -22,6 +22,27 @@ header {
     padding-bottom: 20px;
 }
 
+.hamburger-lines {
+    position: absolute;
+    display: block;
+    height: 26px;
+    width: 32px;
+    top: 40px;
+    right: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    display: none;
+}
+
+.hamburger-lines .line {
+    display: block;
+    background-color: #507F70;
+    height: 4px;
+    width: 30px;
+    border-radius: 10px;
+}
+
 h1 {
     font-size: 50px;
     color: #507F70;
@@ -280,6 +301,12 @@ footer {
     align-items: center;
     width: 90%; 
     padding-bottom: 75px;
+    font-weight: bold;
+}
+
+.information section p {
+    font-weight: bold;
+    opacity: 75%;;
 }
 
 .information a {
@@ -316,6 +343,7 @@ footer {
     position: absolute;
     bottom: 30px;
     right: 100px;
+    opacity: 50%;
 }
 
 
@@ -486,7 +514,7 @@ footer {
 }   
 
 .benefits-section ul li::before {
-    content: "\2714";
+    content: "\2713";
     color: #507F70;
     position: absolute;
     top: 10%;
@@ -637,7 +665,7 @@ footer {
     }
 
     h3 {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     h4 {
@@ -738,19 +766,34 @@ footer {
 
     .information {
         flex-direction: column-reverse;
+        align-items: start;
+        justify-content: center;
         width: 100%;
-        row-gap: 50px;
         padding: 0;
+        margin-left: 20%;
+        row-gap: 10px;
+        padding-bottom: 60px;
     }
 
     .footer-list ul {
-        height: 175px;
+        height: 220px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-        width: 100%;
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 0;
+        row-gap: 7px;
+        padding-bottom: 60px;
+        margin-bottom: 50px;
+        padding-left: 8%;
     }
 
     .footer-list ul li {
         max-width: 160px;
+    }
+
+    .copyright {
+        bottom: 10px;
     }
 
     .together-section {
@@ -815,6 +858,104 @@ footer {
     .our-support-section .alternative-button {
         margin-left: 25%;
         width: 200px;
+    }
+
+    .our-locations {
+        margin: 75px 5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-locations h1 {
+        margin-left: 0;
+    }
+
+    .locations {
+        flex-direction: column;
+    }
+
+    .locations article {
+        margin-bottom: 60px;
+        justify-content: center;
+        width: 250px;
+        height: auto;
+    }
+
+    .locations article h3 {
+        font-size: 20px;
+    }
+
+    .hero-section-work {
+        margin: 74px 5%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-article-work {
+        width: auto;
+        padding-bottom: 75px;
+    }
+
+    .benefits-section {
+        margin: 75px 5%;
+    }
+
+    .benefits-section ul {
+        height: auto;
+        margin-left: 10%;
+    }
+
+    .benefits-section ul li {
+        width: auto;
+        margin-bottom: 25px;
+    }
+
+    .workers-section {
+        margin: 75px 5%;
+        flex-direction: column;
+    }
+
+    .workers-section h2 {
+        width: auto;
+    }
+
+    .workers-section-buttons {
+        margin-top: 30px;
+    }
+
+    .contact-section {
+        margin: 75px 5%;
+    }
+
+    .contact-intro-article {
+        width: auto;
+    }
+
+    .information-section {
+        grid-template-columns: auto;
+        height: auto;
+        row-gap: 50px;
+        margin-bottom: 100px;
+        width: auto;
+        justify-content: start;
+    }
+
+    .information-section h4 {
+        font-size: 18px;
+    }
+
+    .workers-cards-section {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+        row-gap: 40px;
+    }
+
+    .worker-card h5 {
+        height: auto;
     }
 
     
