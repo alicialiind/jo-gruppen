@@ -150,7 +150,7 @@ nav ul li:hover::after {
 .hero-section {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     height: auto;
     column-gap: 5%;
     margin: 100px 10%;
@@ -169,6 +169,10 @@ nav ul li:hover::after {
     margin-bottom: 20px;
 }
 
+.hero-article h2 {
+    margin-bottom: 20px;
+}
+
 .hero-article p {
     width: 80%;
 }
@@ -182,6 +186,7 @@ nav ul li:hover::after {
 .hero-section img {
     width: 550px;
     border-radius: 10px;
+    margin-top: 3%;
     box-shadow: 0px 4px 20px 0 rgba(34, 34, 34, 0.25);
 }
 
@@ -296,12 +301,20 @@ footer {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 0 200px 0 100px;
+    padding: 0 100px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .outer-information img {
     margin-right: 50px;
+}
+
+.addresses {
+    width: 50%;
+    max-width: 550px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
 }
 
 .information {
@@ -387,23 +400,19 @@ footer {
 /* BLI KUND */
 
 .hero-sign-up {
-    height: 400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 700px;
-    margin-left: 200px;
-}
-
-.hero-sign-up h1 {
-    margin-bottom: 30px;
+    margin: 100px 200px 75px 200px;
 }
 
 .why-us-section {
     display: flex;
     justify-content: center;
     align-items: start;
-    column-gap: 175px;
+    column-gap: 10%;
     margin-bottom: 150px;
 }
 
@@ -461,16 +470,24 @@ footer {
 
 .locations {
     display: flex;
-    justify-content: space-evenly;
-    column-gap: 50px;
+    width: 100%;
+    height: auto;
+    justify-content: start;
+    column-gap: 75px;
+    row-gap: 90px;
+    flex-wrap: wrap;
 }
 
 .locations article {
-    width: 270px;
-    height: 100px;
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
+}
+
+.locations article h3 {
+    margin-bottom: 10px;
 }
 
 .locations a {
@@ -561,42 +578,6 @@ footer {
 
 /* KONTAKTA OSS */
 
-.contact-section {
-    margin: 100px 300px;
-}
-
-.contact-section a {
-    color: #222222;
-}
-
-.contact-intro-article {
-    width: 550px;
-}
-
-.contact-intro-article a {
-    color: #507F70;
-    font-weight: bold;
-}
-
-.contact-intro-article h1 {
-    margin-bottom: 20px;
-}
-
-.information-section {
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    height: 200px;
-    width: 70%;
-    column-gap: 50px;
-    row-gap: 30px;
-    margin-left: 80px;
-    margin-top: 50px;
-}
-
-.information-section .info h4 {
-    margin-bottom: 10px;
-}
-
 .workers-office-section {
     display: flex;
     flex-direction: column;
@@ -604,9 +585,7 @@ footer {
 }
 
 .workers-office-section h2 {
-    padding: 0 20% 40px 20%;
-    margin-bottom: 10px;
-    border-bottom: 1px solid rgba(34, 34, 34, 0.25);
+    margin-bottom: 0;
 }
 
 .workers-cards-section {
@@ -614,14 +593,16 @@ footer {
     justify-content: space-evenly;
     width: 100%;
     margin: 70px 10px 100px 10px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.25);
 }
 
 .worker-card {
-    width: 240px;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 400px;
+    height: auto;
 }
 
 .worker-card img {
@@ -645,7 +626,6 @@ footer {
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 1rem;
-    height: 75px;
 }
 
 .worker-card p {
@@ -657,35 +637,100 @@ footer {
     color: #507F70;
 }
 
+.contact-section {
+    margin: 100px 300px;
+}
+
+.contact-section a {
+    color: #222222;
+}
+
+.contact-intro-article {
+    width: 550px;
+    margin-bottom: 50px;
+}
+
+.contact-intro-article a {
+    color: #507F70;
+    font-weight: bold;
+}
+
+.contact-intro-article h1 {
+    margin-bottom: 20px;
+}
+
+.information-section {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    height: 200px;
+    width: 70%;
+    column-gap: 50px;
+    row-gap: 30px;
+    margin-left: 80px;
+}
+
+.information-section .info h4 {
+    margin-bottom: 10px;
+}
+
 
 
 
 /* MOBILE */
 
-@media only screen and (max-width: 500px) {
-    body, html {
-        overflow-x: hidden;
+@media only screen and (max-width: 1400px) {
+
+    .outer-information {
+        justify-content: space-between;
+        padding-bottom: 25px;
+    }
+
+    .footer-list ul {
+        width: 350px;
+        height: auto;
+        flex-direction: row;
+    }
+
+    .copyright {
+        bottom: 15px;
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 40px;
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 30px;
     }
 
     h3 {
         font-size: 20px;
     }
 
-    h4 {
-        font-size: 16px;
+    .hero-section img {
+        width: 450px;
+        margin-bottom: 70px;
     }
 
-    p {
-        font-size: 16px;
-        line-height: 30px;
+    .about-section img {
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+
+    .hero-section {
+        column-gap: 5%;
+        margin: 100px 5%;
+    }
+
+    .hero-section img {
+        width: 400px;
+        margin-bottom: 70px;
+    }
+
+    .about-section img {
+        width: 400px;
     }
 
     header {
@@ -746,8 +791,116 @@ footer {
         border-bottom: none;
     }
 
+    footer {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .outer-information {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        row-gap: 50px;
+        margin: 0;
+    }
+
+    .outer-information img {
+        margin: 0;        
+    }
+
+    .information {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        padding: 0;
+
+        row-gap: 10px;
+        padding-bottom: 60px;
+    }
+
+    .footer-list ul {
+        height: auto;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 20px;
+        row-gap: 7px;
+        margin-bottom: 50px;
+        padding: 0 200px 60px 200px;
+    }
+
+    .addresses {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 100px;
+        width: auto;
+    }
+
+    .footer-list ul li {
+        max-width: 160px;
+    }
+
+    .copyright {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .contact-section {
+        margin: 100px 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .information-section {
+        width: 80%;
+        margin-left: 0;
+        grid-template-columns: repeat(3, 40%);
+        column-gap: 20px;
+    }
+
+    .why-us-section {
+        flex-direction: column;
+        margin: 0 5% 100px 5%;
+        align-items: center;
+        row-gap: 100px;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+    body, html {
+        overflow-x: hidden;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        line-height: 30px;
+    }
+
+    .footer-list ul {
+        grid-template-columns: repeat(2, auto);
+    }
+
     .hero-section {
         flex-direction: column;
+        align-items: center;
         width: auto;
         height: auto;
         margin: 50px 5%;
@@ -808,59 +961,14 @@ footer {
         width: 300px;
     }
 
-    footer {
-        height: auto;
-        padding: 50px 0;
-    }
+    
 
-    .outer-information {
-        flex-direction: column;
-        padding: 0;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        row-gap: 50px;
-    }
-
-    .outer-information img {
-        margin: 0;        
-    }
-
-    .information {
-        flex-direction: column-reverse;
-        align-items: start;
-        justify-content: center;
-        width: 100%;
-        padding: 0;
-        margin-left: 20%;
-        row-gap: 10px;
-        padding-bottom: 60px;
-    }
-
-    .footer-list ul {
-        height: 220px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-        width: auto;
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        column-gap: 0;
-        row-gap: 7px;
-        padding-bottom: 60px;
-        margin-bottom: 50px;
-        padding-left: 8%;
-    }
-
-    .footer-list ul li {
-        max-width: 160px;
-    }
-
-    .copyright {
-        bottom: 10px;
-    }
+    /* OM OSS */
 
     .together-section {
         width: auto;
         height: auto;
+        padding-bottom: 30px;
     }
 
     .together-article {
@@ -870,8 +978,9 @@ footer {
 
     .about-page {
         height: auto;
-        margin: 0 5%;
+        margin: 75px 5%;
         margin-bottom: 50px;
+        padding-top: 0;
     }
 
     .about-page article {
@@ -882,18 +991,15 @@ footer {
         flex-direction: column;
     }
 
+    /* BLI KUND */
+
     .hero-sign-up {
         height: auto;
         width: auto;
         margin: 75px 5%;
     }
 
-    .why-us-section {
-        flex-direction: column;
-        margin: 0 5% 100px 5%;
-        align-items: center;
-        row-gap: 100px;
-    }
+    
 
     .why-us-section article {
         width: auto;
@@ -909,6 +1015,8 @@ footer {
         margin-left: 30px;
     }
 
+    /* VÅRT STÖD */
+
     .our-support-section {
         margin: 75px 5%;
     }
@@ -921,6 +1029,8 @@ footer {
         margin-left: 25%;
         width: 200px;
     }
+
+    /* HÄR FINNS VI */
 
     .our-locations {
         margin: 75px 5%;
@@ -935,10 +1045,12 @@ footer {
 
     .locations {
         flex-direction: column;
+        align-items: center;
+        row-gap: 75px;
     }
 
     .locations article {
-        margin-bottom: 60px;
+        margin-bottom: 0;
         justify-content: center;
         width: 250px;
         height: auto;
@@ -947,6 +1059,8 @@ footer {
     .locations article h3 {
         font-size: 20px;
     }
+
+    /* JOBBA HOS OSS */
 
     .hero-section-work {
         margin: 74px 5%;
@@ -975,6 +1089,8 @@ footer {
         margin-bottom: 25px;
     }
 
+    /* MEDARBETARE */
+
     .workers-section {
         margin: 75px 5%;
         flex-direction: column;
@@ -988,6 +1104,8 @@ footer {
         margin-top: 30px;
     }
 
+    /* KONTAKTA OSS */
+
     .contact-section {
         margin: 75px 5%;
     }
@@ -1000,6 +1118,7 @@ footer {
         grid-template-columns: auto;
         height: auto;
         row-gap: 50px;
+        margin-top: 50px;
         margin-bottom: 100px;
         width: auto;
         justify-content: start;
