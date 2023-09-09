@@ -10,16 +10,26 @@ body {
     font-family: 'Nunito', sans-serif;
     color: #222222;
     position: relative;
+    /*padding-top: 175px;*/
 }
 
 header {
-    height: 20vh;
+    /*position: fixed;
+    background-color: white;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+    top: 0;*/
+    height: 175px;
     box-shadow: 0px 4px 20px 0 rgba(34, 34, 34, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 20px;
+}
+
+.header-up {
+    top: -175px;
 }
 
 #hamburger-lines {
@@ -676,7 +686,7 @@ footer {
 
 
 
-/* MOBILE */
+/* RESPONSIVE */
 
 @media only screen and (max-width: 1400px) {
 
@@ -714,6 +724,32 @@ footer {
 
     .about-section img {
         width: 450px;
+    }
+
+    .together-article {
+        width: 70%;
+    }
+
+    .about-page {
+        height: auto;
+        margin: 100px 100px;
+    }
+
+    .about-page article {
+        width: auto;
+    }
+
+    .our-support-section {
+        margin: 125px 100px 300px 100px;
+    }
+
+    .hero-section-work {
+        margin-left: 50px;
+    }
+
+    .workers-section {
+        margin: 200px 5% 250px 5%;
+        column-gap: 50px;
     }
 }
 
@@ -850,6 +886,11 @@ footer {
         right: 10px;
     }
 
+    .about-page {
+        height: auto;
+        margin: 100px 50px;
+    }
+
     .contact-section {
         margin: 100px 100px;
         display: flex;
@@ -869,6 +910,10 @@ footer {
         margin: 0 5% 100px 5%;
         align-items: center;
         row-gap: 100px;
+    }
+
+    .our-support-section {
+        margin-bottom: 200px;
     }
     
 }
