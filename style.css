@@ -163,7 +163,7 @@ nav ul li:hover::after {
     align-items: start;
     height: auto;
     column-gap: 5%;
-    margin: 100px 10%;
+    margin: 100px;
 }
 
 .hero-article {
@@ -384,7 +384,7 @@ footer {
 .together-section {
     border-bottom: 1px solid rgba(34, 34, 34, 0.25);
     height: auto;
-    margin: 120px 5% 0 5%;
+    margin: 100px;
     padding-bottom: 120px;
 }
 
@@ -452,7 +452,7 @@ footer {
 /* VÅRT STÖD */
 
 .our-support-section {
-    margin: 125px 250px 300px 250px;
+    margin: 125px 200px 300px 200px;
 }
 
 .our-support-article p {
@@ -470,11 +470,10 @@ footer {
 /* HÄR FINNS VI */
 
 .our-locations {
-    margin: 100px 150px 200px 150px;
+    margin: 100px 200px 200px 200px;
 }
 
 .our-locations h1 {
-    margin-left: 10%;
     margin-bottom: 50px;
 }
 
@@ -510,7 +509,6 @@ footer {
 .hero-section-work {
     margin: 100px 200px 0 200px;
     padding-bottom: 150px;
-    padding-left: 100px;
     border-bottom: 1px solid rgba(34, 34, 34, 0.25);
 }
 
@@ -575,7 +573,7 @@ footer {
 }
 
 .workers-section h2 {
-    width: 750px;
+    width: 700px;
 }
 
 .workers-section-buttons {
@@ -648,7 +646,7 @@ footer {
 }
 
 .contact-section {
-    margin: 100px 300px;
+    margin: 100px 200px;
 }
 
 .contact-section a {
@@ -717,6 +715,10 @@ footer {
         font-size: 20px;
     }
 
+    .hero-section {
+        margin: 100px 50px;
+    }
+
     .hero-section img {
         width: 450px;
         margin-bottom: 70px;
@@ -739,16 +741,28 @@ footer {
         width: auto;
     }
 
+    .hero-sign-up {
+        margin: 100px 100px 75px 100px;
+    }
+
+    .why-us-section {
+        column-gap: 5%;
+    }
+
     .our-support-section {
         margin: 125px 100px 300px 100px;
     }
 
+    .our-locations {
+        margin: 100px 100px 200px 100px;
+    }
+
     .hero-section-work {
-        margin-left: 50px;
+        margin-left: 100px;
     }
 
     .workers-section {
-        margin: 200px 5% 250px 5%;
+        margin: 200px 50px 250px 50px;
         column-gap: 50px;
     }
 }
@@ -758,6 +772,7 @@ footer {
     .hero-section {
         column-gap: 5%;
         margin: 100px 5%;
+        
     }
 
     .hero-section img {
@@ -852,7 +867,6 @@ footer {
         justify-content: center;
         width: 90%;
         padding: 0;
-
         row-gap: 10px;
         padding-bottom: 60px;
     }
@@ -915,6 +929,18 @@ footer {
     .our-support-section {
         margin-bottom: 200px;
     }
+
+    .workers-section {
+        flex-direction: column;
+    }
+
+    .contact-section {
+        margin: 100px 10px;
+    }
+
+    .workers-cards-section {
+        width: auto;
+    }
     
 }
 
@@ -941,6 +967,19 @@ footer {
 
     .footer-list ul {
         grid-template-columns: repeat(2, auto);
+        padding: 0 0 50px 2%;
+    }
+
+    .information {
+        width: 100%;
+    }
+
+    .footer-list ul li {
+        width: auto;
+    }
+
+    .addresses {
+        flex-direction: column;
     }
 
     .hero-section {
@@ -950,6 +989,7 @@ footer {
         height: auto;
         margin: 50px 5%;
         column-gap: 0px;
+        justify-content: center;
     }
 
     .hero-article {
@@ -967,13 +1007,13 @@ footer {
     }
 
     .hero-article button {
-        margin-left: 40%;
-        margin-bottom: 50px;
+        margin-left: 20%;
+        margin-bottom: 70px;
     }
 
     .support-section {
         height: auto;
-        padding: 70px 0;
+        padding: 70px 2%;
     }
 
     .support-section h2 {
@@ -984,10 +1024,12 @@ footer {
         display: inline-block;
         height: auto;
         margin-left: 30px;
+        align-items: center;
     }
 
     .support-section ul li {
         margin-bottom: 30px;
+        width: 95%;
     }
 
     .about-section {
@@ -1138,7 +1180,6 @@ footer {
 
     .workers-section {
         margin: 75px 5%;
-        flex-direction: column;
     }
 
     .workers-section h2 {
@@ -1153,10 +1194,12 @@ footer {
 
     .contact-section {
         margin: 75px 5%;
+        align-items: center;
     }
 
     .contact-intro-article {
         width: auto;
+        margin-left: 0;
     }
 
     .information-section {
