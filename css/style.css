@@ -222,6 +222,7 @@ nav ul li:hover::after {
     flex-wrap: wrap;
     height: 210px;
     column-gap: 50px;
+    width: 720px;
 }
 
 .support-section ul li {
@@ -356,6 +357,7 @@ footer {
     flex-wrap: wrap;
     height: 150px;
     column-gap: 30px;
+    width: 480px;
 }
 
 .footer-list ul li {
@@ -540,6 +542,7 @@ footer {
     font-weight: 200;
     height: 180px;
     margin-top: 50px;
+    width: 600px;
 }
 
 .benefits-section ul li {
@@ -1025,6 +1028,7 @@ footer {
         height: auto;
         margin-left: 30px;
         align-items: center;
+        width: 90%;
     }
 
     .support-section ul li {
@@ -1169,6 +1173,7 @@ footer {
     .benefits-section ul {
         height: auto;
         margin-left: 10%;
+        width: 90%;
     }
 
     .benefits-section ul li {
